@@ -1,5 +1,5 @@
 {
-  "name": "blockient",
+  "name": "color-extractor",
   "private": true,
   "version": "0.1.0",
   "type": "module",
@@ -7,7 +7,9 @@
     "dev": "bunx --bun vite",
     "build": "vue-tsc -b && vite build",
     "preview": "vite preview",
-    "steiger": "bunx --bun steiger -w ./src"
+    "steiger": "bunx --bun steiger -w ./src",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "animejs": "^3.2.2",
@@ -26,10 +28,12 @@
     "@vitejs/plugin-vue": "^5.1.4",
     "eslint": "^9.14.0",
     "eslint-plugin-vue": "^9.30.0",
+    "gh-pages": "^6.2.0",
     "sass": "^1.80.6",
     "typescript": "^5.6.3",
     "typescript-eslint": "^8.12.2",
     "vite": "^5.4.10",
     "vue-tsc": "^2.1.10"
-  }
+  },
+  "homepage": "https://crawraps.github.io/color-extractor/"
 }
