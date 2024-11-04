@@ -3,7 +3,7 @@ import type { CurrentTheme, PreferencesState } from './types'
 
 export const usePreferencesStore = defineStore('preferences', {
   state: () => ({
-    theme: 'system',
+    theme: 'light',
   }) as PreferencesState,
   getters: {
     currentTheme(state): CurrentTheme {
