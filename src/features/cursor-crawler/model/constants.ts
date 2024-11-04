@@ -1,0 +1,2 @@
+export const ANIMATION_STEP_DIVISOR = 50;
+export const ANIMATION_STOP_THRESHOLD = 10;
