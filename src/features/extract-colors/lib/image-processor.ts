@@ -56,7 +56,7 @@ function groupByHue(pixels: HSLPixel[]): HSLPixel[][] {
     Object.groupBy(pixels, ([h]) => {
       return Math.round(h * 90)
     }),
-  )
+  ).filter(it => it && it.length > 0) as HSLPixel[][]
 }
 
 const cachedPixels: RGBPixel[] = []
