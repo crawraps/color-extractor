@@ -6,15 +6,11 @@
   "scripts": {
     "dev": "bunx --bun vite",
     "build": "vue-tsc -b && vite build",
-    "preview": "vite preview",
-    "steiger": "bunx --bun steiger -w ./src",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "preview": "vite preview"
   },
   "dependencies": {
     "animejs": "^3.2.2",
     "pinia": "^2.2.5",
-    "steiger": "^0.4.0",
     "vue": "^3.5.12",
     "vue-router": "^4.4.5"
   },
@@ -28,7 +24,6 @@
     "@vitejs/plugin-vue": "^5.1.4",
     "eslint": "^9.14.0",
     "eslint-plugin-vue": "^9.30.0",
-    "gh-pages": "^6.2.0",
     "sass": "^1.80.6",
     "typescript": "^5.6.3",
     "typescript-eslint": "^8.12.2",
